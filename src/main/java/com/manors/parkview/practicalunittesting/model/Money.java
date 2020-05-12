@@ -1,4 +1,4 @@
-package com.manors.parkview.practicalunittesting.bl;
+package com.manors.parkview.practicalunittesting.model;
 
 import java.util.Objects;
 

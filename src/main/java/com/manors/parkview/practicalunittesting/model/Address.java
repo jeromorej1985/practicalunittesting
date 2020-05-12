@@ -1,5 +1,8 @@
 package com.manors.parkview.practicalunittesting.model;
 
+import lombok.Data;
+
+@Data
 public class Address {
     private String street;
 
@@ -11,4 +14,5 @@ public class Address {
     public String getStreet() {
         return street;
     }
+
 }

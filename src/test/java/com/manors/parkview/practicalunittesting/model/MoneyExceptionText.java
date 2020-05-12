@@ -1,12 +1,9 @@
-package com.manors.parkview.practicalunittesting.bl;
+package com.manors.parkview.practicalunittesting.model;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.io.IOError;
-import java.io.IOException;
 
 @RunWith(JUnitParamsRunner.class)
 public class MoneyExceptionText {

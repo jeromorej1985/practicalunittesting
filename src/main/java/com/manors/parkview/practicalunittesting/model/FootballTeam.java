@@ -1,6 +1,9 @@
-package com.manors.parkview.practicalunittesting.bl;
+package com.manors.parkview.practicalunittesting.model;
 
-public class FootballTeam {
+import lombok.Data;
+
+@Data
+public class FootballTeam implements Comparable<FootballTeam> {
     private int gamesWon;
 
     public FootballTeam(int gamesWon) {
@@ -12,5 +15,10 @@ public class FootballTeam {
 
     public int getGamesWon() {
         return gamesWon;
+    }
+
+    @Override
+    public int compareTo(FootballTeam otherTeam) {
+        return gamesWon - otherTeam.getGamesWon();
     }
 }
