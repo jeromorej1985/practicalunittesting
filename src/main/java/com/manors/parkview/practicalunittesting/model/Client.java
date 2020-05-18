@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Client {
     private List<Address> addresses;
+    private String email;
 
     public Client(){
         addresses = new ArrayList<>();
@@ -16,5 +17,9 @@ public class Client {
 
     public List<Address> getAddresses() {
         return addresses;
+    }
+
+    public String getEmail(){
+        return email;
     }
 }

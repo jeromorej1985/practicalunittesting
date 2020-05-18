@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitParamsRunner.class)
-public class MoneyExceptionText {
+public class MoneyExceptionTest {
     private final static int VALID_AMOUNT = 5;
     private final static String VALID_CURRENCY = "USD";
 
