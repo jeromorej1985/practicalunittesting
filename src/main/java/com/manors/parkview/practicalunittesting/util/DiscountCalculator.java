@@ -13,6 +13,7 @@ public class DiscountCalculator {
 	private List<Discount> discounts;
 	private static final String FILENAME = "financial.csv";
 
+	@SuppressWarnings("unchecked")
 	public DiscountCalculator() throws IllegalStateException, FileNotFoundException {
 		ClassLoader classLoader = ClassLoader.getSystemClassLoader();
 
