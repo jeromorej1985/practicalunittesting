@@ -1,7 +1,12 @@
 package com.manors.parkview.practicalunittesting.model;
 
+import java.util.List;
+
 public interface User {
-  
-    void setPassword(String password);
+
     String getPassword();
+    void setPassword(String password);
+    List<Phone> getPhones();
+   void addPhone(Phone phone);
+    
 }

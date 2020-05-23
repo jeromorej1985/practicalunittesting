@@ -30,6 +30,11 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -70,6 +75,36 @@
             <version>1.9.5</version>
             <scope>test</scope>
         </dependency>
+      
+      <dependency>
+        <groupId>org.easytesting</groupId>
+        <artifactId>fest-assert</artifactId>
+        <version>1.4</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>ch.powerunit</groupId>
+        <artifactId>powerunit</artifactId>
+        <version>0.1.1</version>
+      </dependency>
+      <dependency>
+          <groupId>org.awaitility</groupId>
+          <artifactId>awaitility</artifactId>
+          <version>3.1.6</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.google.code.tempus-fugit</groupId>
+          <artifactId>tempus-fugit</artifactId>
+          <version>1.1</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.unitils</groupId>
+          <artifactId>unitils-core</artifactId>
+          <version>3.4.6</version>
+          <scope>test</scope>
+      </dependency>
     </dependencies>
 
     <build>
