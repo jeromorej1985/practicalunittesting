@@ -11,14 +11,14 @@ import com.opencsv.bean.CsvToBeanBuilder;
 
 public class DiscountCalculator {
 	private List<Discount> discounts;
-	private static final String FILENAME = "financial.csv";
-
-	@SuppressWarnings("unchecked")
-	public DiscountCalculator() throws IllegalStateException, FileNotFoundException {
+	private final String FILENAME = "financial.csv";
+	
+	public DiscountCalculator() throws FileNotFoundException {
 		ClassLoader classLoader = ClassLoader.getSystemClassLoader();
 
-		discounts = new CsvToBeanBuilder(new FileReader(classLoader.getResource(FILENAME).getFile()))
-				.withType(Discount.class).build().parse();
+		discounts = new CsvToBeanBuilder<Discount>(new FileReader(classLoader.getResource(FILENAME).getFile()))
+				.withType(Discount.class).build()
+				.parse();
 	}
 
 	public double calculateDiscount(double value) {

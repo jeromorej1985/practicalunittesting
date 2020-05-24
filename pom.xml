@@ -105,6 +105,11 @@
           <version>3.4.6</version>
           <scope>test</scope>
       </dependency>
+      <dependency>
+          <groupId>org.easetech</groupId>
+          <artifactId>easytest</artifactId>
+          <version>0.6.2</version>
+      </dependency>
     </dependencies>
 
     <build>
